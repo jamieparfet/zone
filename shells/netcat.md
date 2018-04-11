@@ -21,5 +21,5 @@
 `export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/games`<br>
 `stty rows [x] cols [y]`<br>
 `alias ll='ls -lAF --color=auto'`<br>
-`alias llf='ls -lAF --color=auto --full-time'`<br>
+`alias llt='ls -lAFtr --color=auto --full-time'`<br>
 `alias pyserv='python -m SimpleHTTPServer'`<br>

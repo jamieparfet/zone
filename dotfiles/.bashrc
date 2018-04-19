@@ -89,14 +89,15 @@ fi
 ####  Aliases  ####
 ###################
 # ls
-alias ll='ls -AlF'
+alias ll='ls -lAF --color=auto'
 alias la='ls -A'
 alias l='ls -CF'
 
 # other
 alias c='clear'
-alias pyserv='find . -maxdepth 1 -type f -printf "wget $(hostname -I | awk '"'"'{print $1}'"'"')/%f\n"; python -m SimpleHTTPServer'
 
+# Python simple HTTP server with wget output for easy copy and paste
+pyserv() { find . -maxdepth 1 -type f -printf "wget $(hostname -I | awk '{print $1}'):"$1"/%f\n"; python -m SimpleHTTPServer "$1"; }
 
 
 # enable programmable completion features (you don't need to enable

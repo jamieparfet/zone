@@ -95,7 +95,7 @@ alias l='ls -CF'
 
 # other
 alias c='clear'
-
+alias pyserv='find . -maxdepth 1 -type f -printf "wget $(hostname -I | awk '"'"'{print $1}'"'"')/%f\n"; python -m SimpleHTTPServer'
 
 
 

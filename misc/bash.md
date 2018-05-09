@@ -7,6 +7,7 @@ Remove duplicate lines inside a text file | `awk '!seen[$0]++' filename`
 Find lines ONLY in file2 (sorted) | `comm -13 file1 file2`
 Find lines ONLY in file2 (unsorted) | `comm -13 <(sort file1.txt) <(sort file2.txt)`
 Ping each host once and only show replies (10.0.0.1/24)| `for i in {1..254}; do ping -c 1 -W 1 10.0.0.$i \| grep 'from'; done`
+Perform DNS lookup on each hostname in file | `while read hostname; do host "$hostname"; done < hosts.txt`
 
 ### IP addresses
 Function     | Command

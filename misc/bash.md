@@ -14,7 +14,7 @@ Sort IPs in file (1 per line) |  `sort -t . -k 3,3n -k 4,4n file.txt`
 Function     | Command
 ------------ | -------------
 Get IP address (Linux) | `hostname -I`
-Get IP address of eth0 (Ubuntu) | `ifconfig eth0 | grep 'inet addr' \| cut -d: -f2 \| awk '{print $1}'`<br>`ip -4 addr show eth0 \| grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
+Get IP address of eth0 (Ubuntu) | `ifconfig eth0 \| grep 'inet addr' \| cut -d: -f2 \| awk '{print $1}'`<br>`ip -4 addr show eth0 \| grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
 Get IP address of eth0 (Debian/OS X) | `ifconfig eth0 \| grep 'inet ' \| awk '{print $2}'`
 Get IP address of en0 (OS X) | `ipconfig getifaddr en0`
 Get external IP | `curl icanhazip.com`<br>`curl checkip.amazonaws.com`<br>`curl eth0.me`<br>`dig +short myip.opendns.com @resolver1.opendns.com`

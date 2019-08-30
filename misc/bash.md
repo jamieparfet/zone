@@ -26,3 +26,8 @@ Function     | Command
 World-writable folders | `find / -writable -type d 2>/dev/null`
 World-writable files | `find / -writable -type f 2>/dev/null`
 Exclude /proc/ and /sys/ | `egrep -v "/proc/\|/sys/"`
+
+### etc
+`sed -i -E '/^200.*730B/d' *`
+`sed -i 's/\([A-Z]\)/\L\1/g' *`
+`grep -rnwih '.' -e '.php'`

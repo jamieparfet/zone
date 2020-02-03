@@ -28,6 +28,8 @@ World-writable files | `find / -writable -type f 2>/dev/null`
 Exclude /proc/ and /sys/ | `egrep -v "/proc/\|/sys/"`
 
 ### etc
-`sed -i -E '/^200.*730B/d' *`
-`sed -i 's/\([A-Z]\)/\L\1/g' *`
-`grep -rnwih '.' -e '.php'`
+Function     | Command
+------------ | -------------
+Remove bad results from dirsearch | `sed -i -E '/^200.*730B/d' *`
+Lowercase everything | `sed -i 's/\([A-Z]\)/\L\1/g' *`
+grep | `grep -rnwih '.' -e '.php'`

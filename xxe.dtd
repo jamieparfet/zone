@@ -1,2 +1,1 @@
-<!ENTITY % secondstage "<!ENTITY disclose SYSTEM 'file:///nonexistent/%target-file;'>">
-%secondstage;
+<!ENTITY % trigger-error "<!ENTITY disclose SYSTEM 'file:///nonexistent/%target-file;'>">

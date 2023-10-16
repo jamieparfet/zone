@@ -1,0 +1,2 @@
+<!ENTITY % secondstage "<!ENTITY disclose SYSTEM 'file:///nonexistent/%target-file;'>">
+%secondstage;
